@@ -1,0 +1,1099 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="/info/xsl/turbine.xsl"?>
+<ServiceInfo>
+    <ServiceName>Turbine</ServiceName>
+    <ServiceVersion>16.9.0</ServiceVersion>
+    <ServiceDescription>Turbine application server</ServiceDescription>
+    <ServiceHostName>dryplmdhcore001</ServiceHostName>
+    <ServiceUniqueID>253798</ServiceUniqueID>
+    <CommandParam>GetJobCoordinator</CommandParam>
+    <Turbine>
+        <ServiceRegistrationInfo>
+            <ActiveHostname>dryplmdhcore001</ActiveHostname>
+            <ActiveLocally>true</ActiveLocally>
+            <LocalHostname>dryplmdhcore001</LocalHostname>
+        </ServiceRegistrationInfo>
+        <JobCoordinator>
+            <Active>true</Active>
+            <CpuUsed>
+                <Double>0.0</Double>
+            </CpuUsed>
+            <DisplayedJobType>None</DisplayedJobType>
+            <JobFactories />
+            <JobStrategyLogs>
+                <JobStrategyLog>
+                    <FactoryName>BXFOutboundForSnellFileJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Retry</ShortStrategyName>
+                    <StrategyName>RetryJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>CreateBrowseProxyCCJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>DatabaseCleanupJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 03:00:03.481 Job [50299819] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 03:00:00.060 Job [50299819] has started on host dryplmdhcore002
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>HTMLEmailJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMAutoUploadJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-06-12 12:19:07.853 Job [46012165] failed with an error: Manually aborted
+                    </JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-08-24 23:33:06.802 Job [49856431] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-08-24 23:31:51.715 Job [49856431] has started on host dryplmdhcomp002
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMPurgeJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-06-12 11:03:51.893 Job [46014808] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-06-12 11:03:50.139 Job [46014808] has started on host dryplmdhcomp009
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMRedeliverJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:17:09.579 Job [50312887] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:17:08.372 Job [50312887] has started on host dryplmdhcomp001
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMTxDeliveryCheckOnReadyJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-02 17:16:40.131 Job [50312788] attempted and failed because Host:
+                        [dryplmdhcomp009]: [OMTxDeliveryCheckOnReadyJobFactory] is short of resource(s). Reason: No
+                        Runner of type: omTxDeliveryCheck available to start new [OMTxDeliveryCheckOnReadyJobFactory]
+                        job</JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:18:48.266 Job [50312950] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:18:46.149 Job [50312950] has started on host dryplmdhcomp009
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMUploadJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-07-05 17:28:36.798 Job [47260765] attempted and failed because Host:
+                        [dryplmdhcomp007]: [OMUploadJobFactory] is short of resource(s). Reason: No Runner of type:
+                        omUploadRunner available to start new [OMUploadJobFactory] job</JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-06-12 12:18:24.162 Job [46015261] failed with an error: Manually aborted
+                    </JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 17:19:08.705 Job [50312968] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:19:03.986 Job [50312968] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMUploadLocalIngestJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 14:58:35.241 Job [50307367] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 14:58:32.247 Job [50307370] has started on host dryplmdhcomp002
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMVantageTranscodeJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-01 22:17:36.134 Job [50276956] attempted and failed because Host:
+                        [dryplmdhcomp005]: [OMVantageTranscodeJobFactory] is short of resource(s). Reason: No Runner of
+                        type: omVantageTranscode available to start new [OMVantageTranscodeJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-07-09 19:15:25.278 Job [47528737] failed with an error: Manually aborted
+                    </JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 17:17:11.986 Job [50312542] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:19:08.626 Job [50312971] has started on host dryplmdhcomp004
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>OMaddComponentJobAction</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>RCDMaterialReadyJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:19:15.946 Job [50312992] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:19:14.732 Job [50312992] has started on host dryplmdhcomp006
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>RCDPurgeJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-07-08 17:01:02.575 Job [47453566] attempted and failed because Host:
+                        [dryplmdhcomp009]: [RCDPurgeJobFactory] is short of resource(s). Reason: No Runner of type:
+                        rcdPurge available to start new [RCDPurgeJobFactory] job</JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-07-13 22:04:12.673 Job [47733292] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-07-13 22:04:11.550 Job [47733292] has started on host dryplmdhcomp008
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>RCDUploadJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-06-12 11:08:53.506 Job [46015171] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-06-12 11:08:51.372 Job [46015171] has started on host dryplmdhcomp003
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>RCDVantageTranscodeJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-06-12 11:15:56.364 Job [46015180] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-06-12 11:08:53.435 Job [46015180] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>RenderX Browse Transfer Job Factory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>SFEmailJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-09-02 16:52:48.855 Job [50311486] failed with an error: Failed messages:
+                        javax.mail.MessagingException: IOException while sending message;
+                        nested exception is:
+                        java.io.FileNotFoundException:
+                        /srv/isilon/ENG/CGardner/Internal_Missing_Material_NECN_09_01_2022.csv (No such file or
+                        directory)</JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 17:18:41.579 Job [50312938] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:18:41.553 Job [50312938] has started on host dryplmdhcomp001
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>SFMaterialReadyJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>SFVantageTranscodeJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>false</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>ScriptProxyTransferJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>SnellBxfSend</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>SnellBxfSendTest</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>TBUploadJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 15:00:25.182 Job [50307457] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 15:00:23.887 Job [50307457] has started on host dryplmdhcomp005
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>TBUploadSuccessesJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 04:00:01.655 Job [50300728] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 04:00:00.054 Job [50300728] has started on host dryplmdhcomp004
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>TBVantageTranscodeJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-02 01:16:34.180 Job [50292853] attempted and failed because Host:
+                        [dryplmdhcomp007]: [TBVantageTranscodeJobFactory] is short of resource(s). Reason: No Runner of
+                        type: tbVantageTranscode available to start new [TBVantageTranscodeJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-07-20 20:24:49.821 Job [48056773] failed with an error: Manually aborted
+                    </JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 01:23:14.691 Job [50292853] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 01:16:41.336 Job [50292853] has started on host dryplmdhcomp006
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Tx Priority</ShortStrategyName>
+                    <StrategyName>TxPriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>amagiAsperaTransfer</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 00:58:36.542 Job [50296828] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 00:57:59.386 Job [50296828] has started on host dryplmdhcomp002
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>autoOMUploadJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>autoSccUploadJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>autoScheduleRecordJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>autoUploadJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>batonQCJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-02 17:16:03.466 Job [50312689] attempted and failed because Host:
+                        [dryplmdhcomp002]: [batonQCJobFactory] is short of resource(s). Reason: No Runner of type:
+                        batonAutoQC available to start new [batonQCJobFactory] job</JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:18:46.198 Job [50312890] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:17:11.931 Job [50312890] has started on host dryplmdhcomp002
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>checkMaterialStateJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-01 21:15:00.640 Job [50269843] attempted and failed because Host:
+                        [dryplmdhcomp007]: [checkMaterialStateJobFactory] is short of resource(s). Reason: No Runner of
+                        type: checkMaterialState available to start new [checkMaterialStateJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:19:15.730 Job [50312995] finished with status Failed
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:19:14.731 Job [50312995] has started on host dryplmdhcomp006
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>contentTrimJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 04:15:34.128 Job [50300971] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 04:11:28.731 Job [50300971] has started on host dryplmdhcomp006
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>defaultRenderXJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-02 17:17:13.184 Job [50312896] attempted and failed because Host:
+                        [dryplmdhcomp007]: [defaultRenderXJobFactory] is short of resource(s). Reason: No Runner of
+                        type: defaultRenderX available to start new [defaultRenderXJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:18:51.366 Job [50312944] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:18:43.256 Job [50312944] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>defaultTransferJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-06-12 10:17:29.379 Job [46011205] failed with an error: Manually aborted
+                    </JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 17:19:17.500 Job [50312965] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:19:01.783 Job [50312965] has started on host dryplmdhcomp009
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>divaRestorePostProcessJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:03:38.139 Job [50311900] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:03:38.043 Job [50311900] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>durationCheckJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 01:23:15.883 Job [50297737] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 01:23:14.622 Job [50297737] has started on host dryplmdhcomp009
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>exportPXFtoBXFSnellFileJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Retry</ShortStrategyName>
+                    <StrategyName>RetryJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>exportVeniceIngestXml</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>exportVeniceQCXml</FactoryName>
+                    <JobAttemptedLogEvent>2022-08-24 20:51:25.351 Job [49839640] attempted and failed because Host:
+                        [dryplmdhcomp005]: [exportVeniceQCXml] is short of resource(s). Reason: No Runner of type:
+                        exportVeniceQCXmlRunner available to start new [exportVeniceQCXml] job</JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:16:59.956 Job [50312866] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:16:58.726 Job [50312866] has started on host dryplmdhcomp005
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>failureJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:17:08.440 Job [50312884] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:17:07.230 Job [50312884] has started on host dryplmdhcomp001
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>genericEngTestJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>genericEngTestJobFactory02</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>httpExportLocalTest</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Retry</ShortStrategyName>
+                    <StrategyName>RetryJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>httpExportWideOrbit</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:18:46.341 Job [50312953] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:18:46.149 Job [50312953] has started on host dryplmdhcomp001
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Retry</ShortStrategyName>
+                    <StrategyName>RetryJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>httpExportWideOrbitPurge</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Retry</ShortStrategyName>
+                    <StrategyName>RetryJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>httpImportJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fail Fast</ShortStrategyName>
+                    <StrategyName>FailFastJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>importJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-09-01 21:08:21.975 Job [50267779] failed with an error: Error encountered
+                        during the import with file name: [import/3d87eef7-6888-4e9d-a495-cdacf42ac368]
+                        and coordination Id 50267779
+                        Job with coordinationid: 50267779
+                        Failed importing Material [H2_TSAPR5735X]
+                        (Material [H2_TSAPR5735X] is not valid to be inserted as a new entity)</JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 17:19:14.713 Job [50312986] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:19:14.519 Job [50312986] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>ingestFinalisationJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:02:17.369 Job [50311831] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:02:10.709 Job [50311831] has started on host dryplmdhcomp003
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fail Fast</ShortStrategyName>
+                    <StrategyName>FailFastJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>isilonTransferJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:15:38.031 Job [50312668] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:15:36.696 Job [50312668] has started on host dryplmdhcomp008
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>manualRecordJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>manualRecordRT2JobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-06-12 15:01:02.314 Job [46024762] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-06-12 14:55:47.900 Job [46024762] has started on host dryplmdhcomp003
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>markerEmailJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>materialInitialisationJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:19:15.844 Job [50312989] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:19:14.727 Job [50312989] has started on host dryplmdhcomp010
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Retry</ShortStrategyName>
+                    <StrategyName>RetryJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>missingListJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-08-12 20:52:45.721 Job [49259551] attempted and failed because Host:
+                        [dryplmdhcomp002]: [missingListJobFactory] is short of resource(s). Reason: No Runner of type:
+                        missingListRunner available to start new [missingListJobFactory] job</JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:13:07.749 Job [50312491] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:12:47.429 Job [50312491] has started on host dryplmdhcomp003
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>nearlineMediaDeleteJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-02 17:20:36.870 Job [46007430] attempted and failed because No
+                        JobManager is listening for these messages. job coordinationId=[46007430]</JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobMostRecentEvent>Retry</JobMostRecentEvent>
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>omCaptionExtractionJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>omReadyWorkflowDecision</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 04:11:28.785 Job [50300968] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 04:11:24.399 Job [50300968] has started on host dryplmdhcomp004
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>pitchblueJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>purgeBackupRecordsJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 12:00:02.017 Job [50304106] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 12:00:00.061 Job [50304106] has started on host dryplmdhcomp008
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>scheduledRecordJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-08-20 07:59:04.107 Job [49664752] failed with an error: Went straight from
+                        record cued to idle</JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 17:02:08.698 Job [50309926] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 15:57:58.027 Job [50309926] has started on host dryplmdhcomp005
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fail Fast</ShortStrategyName>
+                    <StrategyName>FailFastJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>segmentEmailJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 16:54:03.660 Job [50311546] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 16:54:02.308 Job [50311546] has started on host dryplmdhcomp008
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>snellHttpImportFileArchivingJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>snellHttpImportJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 00:56:14.661 Job [50296735] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 00:56:14.515 Job [50296735] has started on host dryplmdhcomp002
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>txComponentValidationJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-08-31 22:05:04.286 Job [50206645] attempted and failed because Host:
+                        [dryplmdhcomp002]: [txComponentValidationJobFactory] is short of resource(s). Reason: No Runner
+                        of type: txComponentValidation available to start new [txComponentValidationJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 15:30:18.664 Job [50308852] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 15:30:17.266 Job [50308852] has started on host dryplmdhcomp003
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>txFailureEmailJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-01 00:34:47.848 Job [50227732] attempted and failed because Host:
+                        [dryplmdhcomp008]: [txFailureEmailJobFactory] is short of resource(s). Reason: No Runner of
+                        type: txFailureEmail available to start new [txFailureEmailJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:18:58.751 Job [50312962] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:18:57.591 Job [50312962] has started on host dryplmdhcomp008
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>txFastTrackMaterialDeliveryJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-08-05 11:07:44.049 Job [48880906] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-08-05 11:07:18.029 Job [48880906] has started on host dryplmdhcomp001
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>txMaterialDeliveryJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-02 13:39:56.701 Job [50305426] attempted and failed because Host:
+                        [dryplmdhcomp005]: [txMaterialDeliveryJobFactory] is short of resource(s). Reason: No Runner of
+                        type: txMaterialDelivery available to start new [txMaterialDeliveryJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:18:48.602 Job [50312947] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:18:43.767 Job [50312947] has started on host dryplmdhcomp005
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>txMetadataDeliveryJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-01 22:30:41.937 Job [50279281] attempted and failed because Host:
+                        [dryplmdhcomp006]: [txMetadataDeliveryJobFactory] is short of resource(s). Reason: No Runner of
+                        type: txMetadataDelivery available to start new [txMetadataDeliveryJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:18:57.567 Job [50312956] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:18:48.577 Job [50312956] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>vantageGatewayJobFactory</FactoryName>
+                    <JobAttemptedLogEvent>2022-09-01 20:24:00.398 Job [50261092] attempted and failed because Host:
+                        [dryplmdhcomp006]: [vantageGatewayJobFactory] is short of resource(s). Reason: No Runner of
+                        type: vantageGatewayRunner available to start new [vantageGatewayJobFactory] job
+                    </JobAttemptedLogEvent>
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent>2022-08-30 23:27:23.229 Job [50150365] failed with an error: [Action [Decide],
+                        state=IGNORED, progress=0]
+                        [Action [Analyze], state=COMPLETE, progress=100]
+                        [Action [Receive], state=COMPLETE, progress=100]
+                        [Action [Flip], state=IGNORED, progress=0]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Synchronize], state=COMPLETE, progress=100]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Deploy], state=IGNORED, progress=0]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Synchronize], state=IGNORED, progress=0]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Flip], state=IGNORED, progress=0]
+                        [Action [Construct], state=FAILED, progress=0]
+                        [Action [Flip], state=IGNORED, progress=0]
+                        [Action [Synchronize], state=FAILED, progress=0]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Flip], state=FAILED, progress=0, error=Error: An error occurred during execution of the
+                        Transcode Task: Process Id = 8424 Aborted due to inactivity timeout.]
+                        [Action [Decide], state=COMPLETE, progress=100]
+                        [Action [Flip], state=IGNORED, progress=0]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Flip], state=IGNORED, progress=0]
+                        [Action [Flip], state=IGNORED, progress=0]
+                        [Action [Decide], state=COMPLETE, progress=100]
+                        [Action [Deploy], state=FAILED, progress=0, error=Error: The session has encountered a failure
+                        state.]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Flip], state=IGNORED, progress=0]
+                        [Action [Decide], state=COMPLETE, progress=100]
+                        [Action [Decide], state=IGNORED, progress=0]
+                        [Action [Decide], state=IGNORED, progress=0]</JobFailedLogEvent>
+                    <JobFinishedLogEvent>2022-09-02 17:09:34.489 Job [50312227] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:08:30.834 Job [50312227] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>vantageTranscodeJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent />
+                    <JobStartedLogEvent />
+                    <ShortStrategyName>Priority</ShortStrategyName>
+                    <StrategyName>PriorityJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>veniceIngestTransferJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-08-28 05:12:11.948 Job [50027410] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-08-28 05:12:07.684 Job [50027410] has started on host dryplmdhcomp006
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>veniceTransferJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 17:15:27.734 Job [50312635] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 17:15:26.362 Job [50312635] has started on host dryplmdhcomp001
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+                <JobStrategyLog>
+                    <FactoryName>xvpPreRecordJobFactory</FactoryName>
+                    <JobAttemptedLogEvent />
+                    <JobErrorLogEvent />
+                    <JobFactoryRunning>true</JobFactoryRunning>
+                    <JobFailedLogEvent />
+                    <JobFinishedLogEvent>2022-09-02 15:58:07.405 Job [50309929] finished with status Finished
+                    </JobFinishedLogEvent>
+                    <JobMostRecentEvent>Started</JobMostRecentEvent>
+                    <JobStartedLogEvent>2022-09-02 15:57:58.234 Job [50309929] has started on host dryplmdhcomp007
+                    </JobStartedLogEvent>
+                    <ShortStrategyName>Fifo</ShortStrategyName>
+                    <StrategyName>FifoJobFactoryManagementStrategy</StrategyName>
+                </JobStrategyLog>
+            </JobStrategyLogs>
+            <Jobs />
+            <MemoryUsed>
+                <Double>0.0</Double>
+            </MemoryUsed>
+            <MesosAgentOffers />
+            <MesosAgents />
+            <MesosConnectionInfo>
+                <Status>Not connected</Status>
+            </MesosConnectionInfo>
+            <PageEnd>0</PageEnd>
+            <PageStart>0</PageStart>
+            <RecentCleanupJobs>2</RecentCleanupJobs>
+            <WatchedTaskCount>None</WatchedTaskCount>
+            <WorkingNodes />
+        </JobCoordinator>
+        <Command>showStrategies</Command>
+    </Turbine>
+    <RequestData command="GetJobCoordinator"></RequestData>
+</ServiceInfo>
