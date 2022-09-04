@@ -1,4 +1,4 @@
-// #### async way with callback ####
+// #### sync way with callback ####
 const { XMLParser } = require("fast-xml-parser");
 const fs = require("fs");
 
@@ -6,12 +6,17 @@ const parser = new XMLParser();
 const data = fs.readFile("./jobstrategies.xml", function (err, data) {
   const jObj = parser.parse(data);
 
-  const strategies =
-    jObj.ServiceInfo.Turbine.JobCoordinator.JobStrategyLogs.JobStrategyLog.forEach(
+  const strategies = [];
+  jObj.ServiceInfo.Turbine.JobCoordinator.JobStrategyLogs.JobStrategyLog.forEach(
       (log) => {
-        console.log(log);
+        let row = log.FactoryName.toString();
+        strategies.push(row);
       }
     );
+  const writer = fs.createWriteStream("./prod.csv")
+  strategies.forEach((item) => {
+    writer.write(item+"\n", (err)=>{if (err) throw err;});
+  })
 });
 
 // #### async way with promises ####
