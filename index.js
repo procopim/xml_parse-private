@@ -6,17 +6,16 @@ const parser = new XMLParser();
 const data = fs.readFile("./jobstrategies.xml", function (err, data) {
   const jObj = parser.parse(data);
 
-  const strategies = [];
-  jObj.ServiceInfo.Turbine.JobCoordinator.JobStrategyLogs.JobStrategyLog.forEach(
-      (log) => {
-        let row = log.FactoryName.toString();
-        strategies.push(row);
-      }
+  const strategies =
+    jObj.ServiceInfo.Turbine.JobCoordinator.JobStrategyLogs.JobStrategyLog.map(
+      (log) => log.FactoryName
     );
-  const writer = fs.createWriteStream("./prod.csv")
+  const writer = fs.createWriteStream("./prod.csv");
   strategies.forEach((item) => {
-    writer.write(item+"\n", (err)=>{if (err) throw err;});
-  })
+    writer.write(item + "\n", (err) => {
+      if (err) throw err;
+    });
+  });
 });
 
 // #### async way with promises ####
